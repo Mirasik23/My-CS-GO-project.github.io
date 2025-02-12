@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+
+}
 
 html{
     font-size: 20px;
@@ -30,6 +34,7 @@ html{
     text-indent: 20px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 50%;
 }
 .menu_link{
     padding: 10px;
@@ -167,7 +172,7 @@ html{
     border-bottom: 2px solid;
     margin-bottom: 15px;
 }
-.download1{
+.download{
     display: flex;
 }
 .download_img{
@@ -252,10 +257,8 @@ html{
 }
 .video iframe{
     border-radius: 10px;
-    max-width: 100%;
-    max-height: 100%;
-    min-width: 800px;
-    min-height: 450px;
+    height: 500px;
+    width: 80%;
     margin-bottom: 120px;
 }
 
@@ -424,4 +427,241 @@ footer{
 }
 .list{
     margin: 0 40px;
+}
+
+
+@media (max-width: 985px) and (min-width: 880px) {
+    html{
+        font-size: 15px;
+        justify-content: center;
+    }
+    .menu_link{
+        font-size: 30px;
+        background-color: lightblue;
+        border-radius: 70px;
+        width: 300px;
+        text-align: center;
+        padding: 20px 50px;
+    }
+    nav.menu{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .menu_logo img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    .menu_logo{
+        font-size: 30px;
+        margin: 0px;
+        margin-bottom: 10px;
+        margin: 20px;
+        font-size: 50px;
+        width: fit-content;
+    }
+    #logo_img_id{
+        width: 200px;
+        height: 200px;
+    }
+    .our_services_content{
+        flex-direction: column;
+    }
+    .our_services_btn{
+        margin: 100px;
+    }
+    .our_services_card{
+        border-top: 1px solid;
+    }
+    .download{
+        margin-left: 20%;
+        margin-right: 20%;
+        flex-direction: column-reverse;
+    }
+    .download img{
+        margin-right: 0px;
+        margin-top: 50px;
+        margin-left: 2%;
+    }
+    .download_text{
+        padding-top: 15px;
+    }
+    .last{
+        padding: 0;
+    }
+    .last a{
+        margin-top: 0;
+    }
+    .last h1{
+        font-size: 30px;
+    }
+    .video h1{
+        font-size: 30px;
+    }
+    #video_iframe{
+        width: 90%;
+        overflow: auto;
+        height: 500px;
+    }
+    .discounts_all{
+        display: flex;
+        flex-direction: column;
+    }
+    .discounts h1{
+        font-size: 30px;
+    }
+    .discounts_card{
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:390px) and (max-width:450px){
+    html{
+        font-size: 15px;
+        justify-content: center;
+    }
+    .menu_link{
+        font-size: 20px;
+        background-color: lightblue;
+        border-radius: 70px;
+        width: 300px;
+        text-align: center;
+        padding: 20px 50px;
+    }
+    nav.menu{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .menu_logo img{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+    .menu_logo{
+        font-size: 20px;
+        margin: 0px;
+        margin-bottom: 10px;
+        margin: 20px;
+        font-size: 50px;
+        width: fit-content;
+    }
+    .infa_title{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .infa_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .our_services{
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+    .our_services_content{
+        flex-direction: column;
+    }
+    .our_services_card{
+        border-top: 1px solid;
+        max-width: 300px;
+    }
+    .our_services_card img{
+        width: 200px;
+    }
+
+    .download{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .download img{
+        margin-right: 0px;
+        margin-top: 50px;
+        width: 390px;
+        height: 200px;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .download_img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    .download_text{
+        padding-top: 15px;
+    }
+    .last{
+        padding: 0;
+    }
+    .last a{
+        margin-top: 0;
+    }
+    .last h1{
+        font-size: 30px;
+    }
+    .video h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    #video_iframe{
+        width: 90%;
+        overflow: auto;
+        height: 230px;
+    }
+
+    .discounts_all{
+        display: flex;
+        flex-direction: column;
+    }
+    .discounts h1{
+        font-size: 30px;
+    }
+    .discounts_card{
+        margin-bottom: 20px;
+    }
+    footer{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .list{
+        margin: 0 0px;
+        margin-left: 15px;
+    }
+    .footer_list{
+        margin-left: 15px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .footer_left p img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-left: 0;
+    }
+    .footer_left{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer_left_text{
+        padding-left: 10px;
+        margin-right: 0;
+        font-weight: 500;
+    }
+    
 }

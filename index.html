@@ -10,8 +10,8 @@
     <header>
         <nav class="menu">
             <a href="#" class="menu_logo">
-                <img src="./img/logo.png" width="150px" height="150px" alt="">
-                CS GO
+                <img id="logo_img_id" src="./img/logo.png" width="150px" height="150px" alt="">
+                CS:GO
             </a>
             <a href="#" class="menu_link"> Home</a>
             <a href="#" class="menu_link"> Find Service</a>
@@ -27,8 +27,8 @@
             <p>Counter-Strike — is a multiplayer first-person shooter computer game developed and published for Windows by the American company Valve.</p>
             <button class="btn">Welcome to Cyber sport</button>
         </div>
-        <img src="./img/download.jpg" width="600px" height="600px" alt="">
     </section>
+    
     <section class="our_services">
         <div class="our_services_top">
             <h1>Our sevices</h1>
@@ -59,21 +59,22 @@
                 <h3>Strategy</h3>
                 <p>Counter-Strike: Global Offensive is one of the most popular team multiplayer games based on tactics and strategy.</p>
             </div>
-            <a href="#" class="our_services_btn">Learn more</a>
+            <div>
+                <a href="#" class="our_services_btn">Learn more</a>
+            </div>
         </div>
     </section>
 
     <section class="download">
-        <div class="download1">
             <div class="download_text">
                 <h1>CS2 — is your game</h1>
                 <p>Do you have a great idea for a weapon coloring page or sticker? Show yourself! Explore our tutorials for creating coloring pages, stickers and cards, then show off your creation in the workshop.</p>
                 <a href="#" class="download_btn">Download</a>
             </div>
-            <div><img src="./img/asdw.jpg" class="download_img" width="450px" height="250px" alt=""></div></div>
+            <div class="download_img">
+                <img src="./img/asdw.jpg" class="download_img" width="500px" height="300px" alt="">
+            </div>
     </section>
-
-
 
     <section class="last">
         <div class="last_top">
@@ -112,7 +113,7 @@
 
     <section class="video">
         <h1>Counter-Strike 2 - Official Launch Trailer</h1>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/c80dVYcL69E?si=bkvERtWKNpCvIZoO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="video_iframe" width="560" src="https://www.youtube.com/embed/c80dVYcL69E?si=bkvERtWKNpCvIZoO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
     <section class="discounts">
@@ -132,6 +133,7 @@
             </div>
         </div>
     </section>
+
     <section class="contact">
         <div class="contact_top">
             <h1>Leave us your email and we will call you later</h1>
@@ -149,12 +151,13 @@
                 <button type="submit">Submit <img src="./img/MdiArrowRight.svg" alt=""></button>
         </form>
     </section>
+
     <footer>
         <div class="footer_left">
             <p class="footer_logo">
                 <img src="./img/logo.png" alt="">
             </p>
-            <p>CS:GO provides free interesting and fun online experience for everyone!</p>
+            <p class="footer_left_text">CS:GO provides free interesting and fun online experience for everyone!</p>
         </div>
         <div class="footer_right">
             <div class="footer_list">
@@ -190,4 +193,3 @@
     </footer>
 </body>
 </html>
-
